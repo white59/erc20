@@ -1,66 +1,24 @@
-## Foundry
+## ERC20 合约
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+### 概述
+ERC20 合约是 Ethereum 上的代币标准，它定义了代币的基本操作，包括转账、查询余额、查询授权额度等。ERC20 合约是 Ethereum 上最常用的合约，它被广泛应用于各种场景，如金融、游戏、医疗、保险等。
 
-Foundry consists of:
+### 实现
+ERC20 包含两个事件，六个函数和三个变量。
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+#### 事件
+1. 转账事件
+2. 授权事件
 
-## Documentation
+#### 函数
+1. 构造函数
+2. 获取账户余额函数
+3. 获取代币总供应量函数
+4. 授权函数
+5. 获取授权额度函数
+6. 转账函数
+7. 授权转账函数
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+#### 非ERC20标准函数
+1. 铸造函数
+2. 销毁函数
